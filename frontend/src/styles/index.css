@@ -1,0 +1,223 @@
+@import './tokens.css';
+@import './layout.css';
+@import './sections.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 24px);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Shared Eyebrow & Section Card */
+.eyebrow-label {
+  margin: 0 0 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.section-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 32px;
+}
+
+.section-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section-card-title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-brand-dark);
+  letter-spacing: -0.015em;
+}
+
+.section-card-subtitle {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: var(--radius-badge);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.status-badge--lime {
+  background-color: var(--bg-lime-accent);
+  color: var(--color-brand-secondary);
+}
+
+.status-badge--amber {
+  background-color: var(--bg-review-pill);
+  color: var(--color-review-text);
+}
+
+.status-badge--green {
+  background-color: var(--bg-allowed-pill);
+  color: var(--color-brand-secondary);
+}
+
+.status-badge--red {
+  background-color: var(--bg-dismissed-pill);
+  color: #842E2E;
+}
+
+.status-badge--sage {
+  background-color: var(--bg-verified-pill);
+  color: var(--color-brand-secondary);
+  border: 1px solid var(--border-sage);
+}
+
+.status-badge--neutral {
+  background-color: var(--bg-surface-muted);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Shared Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: var(--radius-control);
+  border: 1px solid transparent;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.btn--primary {
+  background-color: var(--color-brand-secondary);
+  color: var(--text-on-dark);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-color: var(--color-brand-dark);
+}
+
+.btn--primary:disabled {
+  background-color: var(--color-btn-disabled);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.btn--secondary {
+  background-color: var(--bg-sage-btn);
+  color: var(--color-brand-dark);
+  border-color: var(--border-sage);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: #DFE9DC;
+}
+
+.btn--secondary:disabled {
+  opacity: 0.72;
+}
+
+/* Empty State Box */
+.empty-state-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 52px 24px;
+  border-radius: var(--radius-inner);
+  background-color: var(--bg-surface-muted);
+  border: 1px solid var(--border-excerpt);
+}
+
+.empty-state-box__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  color: var(--color-accent-green);
+}
+
+.empty-state-box__title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-brand-dark);
+}
+
+.empty-state-box__description {
+  margin: 0;
+  max-width: 440px;
+  font-size: 13px;
+  color: var(--text-subtle);
+}
+
+@media (max-width: 768px) {
+  .section-card {
+    padding: 20px;
+    border-radius: var(--radius-card-md);
+  }
+
+  .section-card-header {
+    flex-wrap: wrap;
+  }
+
+  .section-card-title {
+    font-size: 20px;
+  }
+}

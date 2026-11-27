@@ -1,0 +1,66 @@
+:root {
+  /* Surface & Canvas */
+  --bg-canvas: #F3F5F0;
+  --bg-surface: #FFFFFF;
+  --bg-surface-soft: #FCFCFC;
+  --bg-surface-muted: #F6F8F4;
+  --bg-excerpt: #FAFBF9;
+  --bg-sage-soft: #E9EFE6;
+  --bg-sage-btn: #EBF1E8;
+  --bg-nav-active: #E7EFE5;
+  --bg-lime-accent: #E9F8B8;
+  --bg-next-question: #F3F8E4;
+  --bg-allowed-pill: #E5F6DC;
+  --bg-dismissed-pill: #F9E3E3;
+  --bg-verified-pill: #E8F0E4;
+  --bg-review-pill: #FBF0D9;
+  --bg-notice-warm: #FBFCF4;
+
+  /* Brand & Accents */
+  --color-brand-dark: #143D2D;
+  --color-brand-secondary: #194030;
+  --color-brand-tile: #224939;
+  --color-accent-green: #77AC48;
+  --color-status-green: #74B451;
+  --color-connected-dot: #82B24E;
+  --color-next-border: #9FC259;
+  --color-status-red: #C25656;
+  --color-btn-disabled: #8A9B91;
+  --color-review-text: #7A541C;
+  --color-notice-title: #7A5D2E;
+
+  /* Text */
+  --text-primary: #2C2C2C;
+  --text-muted: #5C655E;
+  --text-subtle: #6E7770;
+  --text-on-dark: #FFFFFF;
+
+  /* Borders */
+  --border-subtle: #E2E4DF;
+  --border-sage: #DCE3D9;
+  --border-input: #D9DDD6;
+  --border-notice: #EAE7DC;
+  --border-excerpt: #E5E8E2;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(20, 61, 45, 0.04);
+
+  /* Typography */
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', 'Times New Roman', Times, serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Mono', 'Consolas', ui-monospace, SFMono-Regular, monospace;
+
+  /* Radii */
+  --radius-card: 20px;
+  --radius-card-md: 16px;
+  --radius-inner: 14px;
+  --radius-control: 10px;
+  --radius-badge: 8px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --header-height: 74px;
+  --container-max: 1320px;
+  --sidebar-width: 316px;
+  --grid-gap: 28px;
+}

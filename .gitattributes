@@ -1,0 +1,4 @@
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+backend/data/retrieval_index/chunks.json filter=lfs diff=lfs merge=lfs -text

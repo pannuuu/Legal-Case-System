@@ -1,0 +1,17 @@
+{
+    "project_name": "AI Assisted Legal Case Guidance and Prediction System",
+    "selected_model": "Random Forest",
+    "algorithm": "Random Forest Classifier",
+    "accuracy": 0.9132,
+    "precision": 0.9223,
+    "recall": 0.8896,
+    "f1_score": 0.9056,
+    "training_samples": 33735,
+    "testing_samples": 8434,
+    "vocabulary_size": 50000,
+    "classes": {
+        "0": "Rejected",
+        "1": "Accepted"
+    },
+    "created_on": "2026-07-22 12:56:49"
+}

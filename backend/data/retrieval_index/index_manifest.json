@@ -1,0 +1,30 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "document_count": 300,
+  "chunk_count": 9316,
+  "categories": [
+    "Arbitration disputes",
+    "Banking and loan disputes",
+    "Cheating and fraud",
+    "Civil procedure and limitation",
+    "Constitutional matters",
+    "Consumer Protection",
+    "Contract Disputes",
+    "Criminal offences",
+    "Cybercrime and IT offences",
+    "Divorce and Maintainance",
+    "Education and service matters",
+    "Employment and labour disputes",
+    "Environmental disputes",
+    "Family and matrimonial disputes",
+    "Intellectual property",
+    "Land acquisition",
+    "Medical negligence",
+    "Motor accident compensation",
+    "Property and land disputes",
+    "Tax disputes"
+  ],
+  "tfidf_vocabulary_size": 30000,
+  "created_at": "2026-11-24T21:38:02.179859+00:00"
+}
