@@ -1,0 +1,40 @@
+# Secrets & Local Environment (NEVER copy into Docker image)
+.env
+*.env
+*.env.*
+!backend/.env.example
+*.pem
+*.key
+
+# Git & VCS
+.git
+.gitignore
+.gitattributes
+
+# Local Virtual Environments & Caches
+.venv
+backend/.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Node build/cache
+frontend/node_modules
+frontend/dist
+frontend/.vite
+
+# Non-runtime large dataset & reference media
+backend/data/retrieval/Case_Files
+reference/ui_reference.mp4
+reference/*.ipynb
+reference/*.png
+docs
+
+# IDE
+.vscode
+.idea
+*.log
